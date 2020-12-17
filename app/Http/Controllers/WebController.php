@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Post;
+use App\Support\Cropper;
 use App\Support\Seo;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class WebController extends Controller
 {
@@ -39,6 +41,8 @@ class WebController extends Controller
 
     public function blog()
     {
+        $posts = Post::orderBy('created_at', 'DESC')->get();
+
         $head = $this->seo->render(
             env('APP_NAME') . ' - UpInside Treinamentos',
             'Descrição teste',
@@ -46,20 +50,25 @@ class WebController extends Controller
             asset('images/img_bg_1.jpg'));
 
         return view('front.blog', [
-            'head' => $head
+            'head' => $head,
+            'posts' => $posts
         ]);
     }
 
-    public function article()
+    public function article($uri)
     {
+        $post = Post::where('uri', $uri)->first();
+
         $head = $this->seo->render(
-            env('APP_NAME') . ' - UpInside Treinamentos',
-            'Descrição teste',
-            route('article'),
-            asset('images/img_bg_1.jpg'));
+            env('APP_NAME') . ' - ' . $post->title,
+            $post->subtitle,
+            route('article', $post->uri),
+            Storage::url(Cropper::thumb($post->cover, 1200, 628))
+        );
 
         return view('front.article', [
-            'head' => $head
+            'head' => $head,
+            'post' => $post
         ]);
     }
 

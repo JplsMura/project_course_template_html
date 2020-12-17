@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b7f5504-f098-4151-9aef-31e3c1ff502e" name="Default Changelist" comment="Atualizando Template para PT-BR e criando um Helper de exemplo">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project_course.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project_course.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WebController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WebController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/article.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/article.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/blog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +192,10 @@
       <workItem from="1607687042274" duration="8834000" />
       <workItem from="1607944020547" duration="3425000" />
       <workItem from="1607965781946" duration="3478000" />
-      <workItem from="1608033449115" duration="3823000" />
+      <workItem from="1608033449115" duration="5306000" />
+      <workItem from="1608060974671" duration="2669000" />
+      <workItem from="1608117325283" duration="1545000" />
+      <workItem from="1608207971414" duration="815000" />
     </task>
     <servers />
   </component>
@@ -241,9 +243,9 @@
       <screen x="0" y="0" width="1920" height="1055" />
     </state>
     <state x="471" y="161" width="977" height="731" key="SettingsEditor/0.0.1920.1055/1920.0.1360.768@0.0.1920.1055" timestamp="1606918624045" />
-    <state x="685" y="366" width="540" height="321" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1607946407292">
+    <state x="685" y="366" width="540" height="321" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1608117941092">
       <screen x="0" y="0" width="1920" height="1055" />
     </state>
-    <state x="685" y="366" width="540" height="321" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1055/1920.0.1360.768@0.0.1920.1055" timestamp="1607946407292" />
+    <state x="685" y="366" width="540" height="321" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1920.1055/1920.0.1360.768@0.0.1920.1055" timestamp="1608117941092" />
   </component>
 </project>
